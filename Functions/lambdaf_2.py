@@ -8,12 +8,12 @@ from datetime import datetime
 
 # get credentials to authenticate Elastic search
 credentials = boto3.Session().get_credentials()
-authent = AWS4Auth("AKIATFE5OP74RRLRPRJB", "R+12qirl0UUhgY6Ngun93Oq0d7FpV4P6SVzTdq46", 'us-east-1', 'es')
+authent = AWS4Auth(accessKey, secretAccessKey, 'us-east-1', 'es')
 
 # connect to the dynamoDB table
 dynamodb = boto3.resource(service_name='dynamodb',
-                          aws_access_key_id="AKIATFE5OP74RRLRPRJB",
-                          aws_secret_access_key="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",
+                          aws_access_key_id=accessKey,
+                          aws_secret_access_key=secretAccessKey,
                           region_name="us-east-1",
                          )
 yelpTable = dynamodb.Table('yelp-restaurants')
