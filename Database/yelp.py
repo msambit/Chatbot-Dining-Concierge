@@ -44,7 +44,7 @@ except ImportError:
 # It now uses private keys to authenticate requests (API Key)
 # You can find it on
 # https://www.yelp.com/developers/v3/manage_app
-API_KEY= "CJRu1L1OPlNopFGtIkKCSxFz_bD69s965nquXSW6IJ6IqO9-J7aJB7nuCmxKGgnthn32dM226V5ReGIVFZzTTnv_cP3RAwEtJ6cVaa4_U2scgf0PTCN-R8f61VcaYnYx"
+API_KEY= API_KEY
 
 
 
@@ -64,8 +64,8 @@ SEARCH_LIMIT = 50
 
 # connect to the dyanmoDB
 client = boto3.resource(service_name='dynamodb',
-                          aws_access_key_id="AKIATFE5OP74RRLRPRJB",
-                          aws_secret_access_key="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",
+                          aws_access_key_id=accessKey,
+                          aws_secret_access_key=secretAccessKey,
                           region_name="us-east-1",
                          )
 table = client.Table('yelp-restaurants')
