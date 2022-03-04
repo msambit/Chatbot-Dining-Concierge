@@ -43,7 +43,7 @@ except ImportError:
 # It now uses private keys to authenticate requests (API Key)
 # You can find it on
 # https://www.yelp.com/developers/v3/manage_app
-API_KEY= "CJRu1L1OPlNopFGtIkKCSxFz_bD69s965nquXSW6IJ6IqO9-J7aJB7nuCmxKGgnthn32dM226V5ReGIVFZzTTnv_cP3RAwEtJ6cVaa4_U2scgf0PTCN-R8f61VcaYnYx"
+API_KEY= API_KEY
 
 
 
@@ -59,7 +59,7 @@ DEFAULT_LOCATION = 'manhattan'
 SEARCH_LIMIT = 50
 
 
-host = 'https://search-restaurants-tnmgae7arsgfy6sqvzp5yfar4i.us-east-1.es.amazonaws.com'
+host = host
 
 index = 'restaurants'
 type = 'Restaurant'
